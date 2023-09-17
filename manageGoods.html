@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Управление каталогом</title>
+    <link rel="stylesheet" href="manageGoods.css">
+    <link rel="stylesheet" href="market.css">
+    <link rel="stylesheet" href="market_mob.css">
+</head>
+<body>
+    <header>
+        <div class="cont laptop">
+            <input type="checkbox" id="burger">
+            <label for="burger">&#8801;</label>
+        <nav class="link">
+            <a href="news.html">Новости</a>
+            <a href="admin.html">Админка</a>
+            <a href="index.html">Каталог</a>
+            <a href="cart.html" class="cart-icon">
+                <img src="images/basket.ico" alt="Корзина">
+                <div id="cartIndicator"></div>
+            </a>
+        </nav>
+        </div>
+        <div class="wrapper-2">
+            <img class="logo" src="logo.png" alt="logo" width="15%">
+            <div class="wrapper-1">
+                <p>8 800 000 00 00</p>
+                <p>с 9 до 21 без выходных</p>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Каталог</h2>
+        <h3><button id="saveToJsonButton" onclick="saveToJson()">Сохранить в файл</button></h3>
+        <table id="cartTable">
+            <thead>
+                <tr>
+                    <th >ID</th>
+                    <th class="catalogg">Фото</th>
+                    <th style="width: 12%">Название</th>
+                    <th style="width: 10%">Цена</th>
+                    <th style="width: 10%"> Цена без сксидки</th>
+                    <th style="width: 20%">Редактировать</th>
+                </tr>
+            </thead>
+            <tbody id="good-item"></tbody>
+        </table>
+    </div>
+    <div class="goods" style="display: none"></div>
+    <footer>
+        <a href="index.html">
+            <img src="images/home-1946488.png" width="17%" alt="Домой">
+            <p>Домой</p>
+        </a>
+        <!-- <a href="">
+            <img src="images/search-4230232.png" width="20%" alt="Каталог">
+        </a> -->
+        <a href="cart.html" >
+            <img src="images/shopping-cart-481384.png" width="17%" alt="Корзина">
+            <p>Корзина</p>
+    
+        </a>
+        <a href="news.html">
+            <img src="images/news-2878787.png" width="17%" alt="Новости">
+            <p>Новости</p>
+        </a>
+        <a href="admin.html">
+            <img src="images/administrator-5909015.png" width="17%" alt="Админка">
+            <p>Админка</p>
+        </a>
+    </footer>
+    <script type="module" src="manageGoods.js"></script>
+    <script type="module" src="market.js"></script>
+</body>
+</html>

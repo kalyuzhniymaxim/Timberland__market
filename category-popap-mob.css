@@ -1,0 +1,85 @@
+.modal-category{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.301);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+
+    visibility: hidden; 
+    opacity: 0; 
+
+    transition: opacity .4s, visibility .4s;
+    
+}
+
+.modal__box-category{
+    position: fixed;
+    /* max-width: 500px; */
+    /* padding: 45px; */
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    /* margin: 30px 15px; */
+    /* background-color: rgb(255, 255, 255);
+    box-sizing: 0px 0px 17px -7px rgba(34, 60, 80, 0.2); */
+    /* transform: scale(0); */
+    bottom: -300px;
+
+    transition: bottom .8s;
+}
+
+.popap-mob{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+
+}
+
+.modal__box-category li{
+    margin: 20px;
+}
+.modal__box-category div{
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+}
+
+
+.modal__lose-btn{
+    position: absolute;
+    border: 0;
+    top: 8px;
+    right: 8px;
+    background-color: transparent;
+    padding: 5px;
+    font-size: 40px;
+    
+    transform: rotate(45deg);
+}
+
+.modal__lose-btn:hover{
+    color: blue;
+    transition: .5s;
+}
+
+.modal-category.open{
+    visibility: visible;
+    opacity: 1;
+
+}
+
+.modal-category.open .modal__box-category{
+    bottom: 50px;
+
+}

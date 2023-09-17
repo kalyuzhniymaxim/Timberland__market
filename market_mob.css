@@ -1,0 +1,57 @@
+.mob, footer{
+    display: none;
+}
+@media(max-width: 900px){
+    .laptop{
+        display: none;
+    }
+    .mob{
+        display: block;
+    }
+    .logo{
+        width: 30%;
+        margin-top: 20px;
+    }
+    #searchInput{
+        width: 80%;
+    }
+    .sidebar form {
+        position: fixed;
+        top: 50px;
+        z-index: 10;
+        right: 0;
+    }
+    footer{
+        min-height: 50px;
+        position: sticky;
+        z-index: 4;
+        bottom: 0;
+        background-color: rgb(46, 39, 5);
+        display: flex;
+        align-items: center;
+        justify-content:space-evenly;
+        
+    }
+
+    footer button {
+        background-color:rgb(46, 39, 5);
+        border: none;
+    }
+    
+    footer img{
+        display: block;
+        margin: 0 auto;
+        filter: invert(100%);
+        cursor: pointer;
+        
+    }
+    footer p {
+        text-align: center;
+        font-size: 12px;
+        color: rgb(255, 255, 255);
+    }
+    .cart_p{
+        color: rgb(255, 255, 255);
+    }
+
+}

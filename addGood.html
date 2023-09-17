@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add new Good</title>
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="market_mob.css">
+</head>
+<body>
+    <header>
+        <div class="cont laptop">
+            <input type="checkbox" id="burger">
+            <label for="burger">&#8801;</label>
+        <nav class="link">
+            <a href="news.html">Новости</a>
+
+            <a href="admin.html">Админка</a>
+            <a href="market.html">Каталог</a>
+            <a href="cart.html" class="cart-icon">
+                <img src="images/basket.ico" alt="Корзина">
+                <div id="cartIndicator"></div>
+            </a>
+        </nav>
+        </div>
+        <div class="wrapper-2">
+            <img class="logo" src="logo.png" alt="logo" width="15%">
+            <div class="wrapper-1">
+                <p>8 800 000 00 00</p>
+                <p>с 9 до 21 без выходных</p>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Добавление нового товара</h2>
+        <form id="add-product-form">
+            <div class="flexx center">
+                <label for="image-path">Изображение</label>
+                <input type="file" id="image-path" required><br>
+            </div>
+            <div class="flexx">
+                <label for="name">Название</label>
+                <input type="text" id="name" required><br>
+            </div>
+            <div class="flexx">
+            <label for="category">Категория</label>
+                <select id="category" required>
+                    <option value="mens">Мужчины</option>
+                    <option value="womens">Женщины</option>
+                    <option value="kids">Дети</option>
+                    <option value="backpack">Рюкзаки</option>
+                    <option value="moccasins">Топсайдеры</option>
+                    <option value="jacket">Куртки</option>
+                </select>
+            </div>
+            <div class="flexx">
+                <label for="price">Новая цена</label>
+                <input type="number" id="price" required><br>
+            </div>
+            <div class="flexx">
+                <label for="oldPrice">Старая цена</label>
+                <input type="number" id="oldPrice" required><br>
+            </div>
+            <button type="submit">Добавить</button>
+            <button id="saveToJsonButton" onclick="saveToJson()">Сохранить в файл</button>
+        </form>
+    </div>
+    <footer>
+        <a href="index.html">
+            <img src="images/home-1946488.png" width="17%" alt="Домой">
+            <p>Домой</p>
+        </a>
+        <!-- <a href="">
+            <img src="images/search-4230232.png" width="20%" alt="Каталог">
+        </a> -->
+        <a href="cart.html" >
+            <img src="images/shopping-cart-481384.png" width="17%" alt="Корзина">
+            <p>Корзина</p>
+    
+        </a>
+        <a href="news.html">
+            <img src="images/news-2878787.png" width="17%" alt="Новости">
+            <p>Новости</p>
+        </a>
+        <a href="admin.html">
+            <img src="images/administrator-5909015.png" width="17%" alt="Админка">
+            <p>Админка</p>
+        </a>
+    </footer>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/uuid@8.3.2/dist/umd/uuidv4.min.js"></script> -->
+    <script src="addGood.js"></script>
+    <script type="module" src="market.js"></script>
+</body>
+</html>

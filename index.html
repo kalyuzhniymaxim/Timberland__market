@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market</title>
+    <link rel="stylesheet" href="market.css">
+    <link rel="stylesheet" href="market_mob.css">
+    <link rel="stylesheet" href="telephone.css">
+    <link rel="stylesheet" href="category-popap-mob.css">
+</head>
+
+<body>
+    <header class="laptop">
+        <div class="cont">
+            <input type="checkbox" id="burger">
+            <label for="burger">&#8801;</label>
+        <nav class="link">
+            <a href="news.html">Новости</a>
+
+            <a href="admin.html">Админка</a>
+            <a href="index.html">Каталог</a>
+            <!-- <a href="">Избранное</a> -->
+            <a href="cart.html" class="cart-icon">
+                <img src="images/basket.ico" alt="Корзина">
+                <div id="cartIndicator" class="cartIndicator1"></div>
+            </a>
+        </nav>
+        </div>
+        <div class="wrapper-2">
+            <img class="logo" src="logo.png" alt="logo" width="15%">
+            <div class="wrapper-1">
+                <p>8 800 000 00 00</p>
+                <p>с 9 до 21 без выходных</p>
+            </div>
+        </div>
+    </header>
+    <header class="mob"> 
+        <div class="wrapper-2">
+            <img class="logo" src="logo.png" alt="logo" width="15%">
+
+
+        </div>
+    </header>
+
+
+        <main>
+            <div class="sidebar">
+                <ul class="categories laptop">
+                    <li data-category="all">New</li>
+                    <li data-category="womens">Женщины</li>
+                    <li data-category="mens">Мужчины</li>
+                    <li data-category="kids">Дети</li>
+                    <li data-category="backpack">Рюкзаки</li>
+                    <li data-category="moccasins">Топсайдеры</li>
+                    <li data-category="jacket">Куртки</li>
+                </ul>
+                <form>
+                    <input type="text" id="searchInput" placeholder="Найти товар...">
+                </form>
+            </div>
+            <div class="goods">
+            </div>
+        </main>
+        <button class="container-telephone" id="open-btn-telephone">
+            <div class="wrapper-telephone">
+                <img src="images/free-icon-phone-call-5585562.png" alt="" class="telephone">
+            </div>
+        </button>
+        <div class="modal-telephone" id="my-modal-telephone">
+            <div class="modal__box-telephone">
+                <button class="modal__lose-btn-telephone" id="close-my-modal-btn-telephone">+</button>
+                <h2>ОБРАТНЫЙ ЗВОНОК</h2>
+                <div class="wrapp-modal-telephone"></div>
+                <form id="tg" >
+                    <div class="form-group">
+                        <!-- <label class="form-label">Имя</label> -->
+                        <input type="text" name="name" class="form-control" placeholder=" Ваше имя">
+                    </div>
+                    <div class="form-group">
+                        <!-- <label class="form-label">Email</label> -->
+                        <input type="tel" name="tel" class="form-control"  placeholder=" Ваш телефон">
+                    </div>
+                    <div class="form-group">
+                        <!-- <label class="form-label">Email</label> -->
+                        <input type="email" name="email" class="form-control" placeholder=" Ваш Email">
+                    </div>
+                    <button type="submit" class="add-to-cart-btn btn"><span> Продолжить</span></button>
+                </form>
+            </div>
+        </div>
+        <div class="modal-category" id="my-modal-category">
+            <ul class="categories modal__box-category"  >
+                <li data-category="all">New</li>
+                <div></div>
+                <li data-category="womens">Женщины</li>
+                <div></div>
+                <li data-category="mens">Мужчины</li>
+                <div></div>
+                <li data-category="kids">Дети</li>
+                <div></div>
+                <li data-category="backpack">Рюкзаки</li>
+                <div></div>
+                <li data-category="moccasins">Топсайдеры</li>
+                <div></div>
+                <li data-category="jacket">Куртки</li>
+                <div></div>
+            </ul>
+        </div>
+<footer>
+    <a href="index.html">
+        <img src="images/home-1946488.png" width="20%" alt="Домой">
+        <p>Домой</p>
+    </a>
+    <button id="open-btn-category">
+        <img  src="images/search-4230232.png" width="20%" alt="Каталог">
+        <p>Каталог</p>
+    </button>
+    
+    <a href="cart.html" >
+        <div id="cartIndicator1" class="cartIndicator1"></div>
+        <img src="images/shopping-cart-481384.png" width="20%" alt="Корзина">
+        
+        <p class="cart_p">Корзина</p>
+    </a>
+    <a href="news.html">
+        <img src="images/news-2878787.png" width="20%" alt="Новости">
+        <p>Новости</p>
+    </a>
+    <a href="admin.html">
+        <img src="images/administrator-5909015.png" width="20%" alt="Админка">
+        <p>Админка</p>
+    </a>
+</footer>
+<script src="category-popap-mob.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+<script src="telephone.js"></script>
+<script type="module" src="market.js"></script>
+</body>
+
+</html>

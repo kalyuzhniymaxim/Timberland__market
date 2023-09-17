@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.telephone{
+    width: 36px;
+    display: block; 
+    justify-content:center;
+    align-items: center;
+    filter: invert(100%);
+
+}
+
+@keyframes white-telephone{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(80deg);
+    }
+}
+
+.wrapper-telephone{
+    background-color: rgb(54, 40, 58);
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    animation-name: white-telephone;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.container-telephone{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin: 100px;
+    background-color:rgba(89, 4, 175, .15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 0;
+    position: fixed;
+    bottom: 0;
+    left: -70px;
+}
+
+.wrapper-telephone:hover{
+    opacity: .8;
+}
+
+.modal-telephone{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.301);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .4s, visibility .4s;
+
+    
+}
+
+.modal__box-telephone{
+    position: relative;
+    max-width: 500px;
+    padding: 45px;
+    z-index: 1;
+    margin: 30px 15px;
+    background-color: rgb(255, 255, 255);
+    box-sizing: 0px 0px 17px -7px rgba(34, 60, 80, 0.2);
+    transform: scale(0);
+    transition: transform .8s;
+    border-radius: 10px;
+}
+
+
+.modal__lose-btn-telephone{
+    position: absolute;
+    border: 0;
+    top: 8px;
+    right: 8px;
+    background-color: transparent;
+    padding: 5px;
+    font-size: 40px;
+    
+    transform: rotate(45deg);
+}
+
+.modal__lose-btn-telephone:hover{
+    color: rgb(92, 67, 99);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.modal-telephone.open-tel{
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-telephone.open-tel .modal__box-telephone{
+    transform: scale(1);
+}
+
+.form-control{
+    display: block;
+    margin: 20px auto;
+    height: 25px;
+    width: 250px;
+    border: 1px solid rgb(92, 67, 99);
+    outline:none;
+}
+
+
+
+.modal-telephone h2{
+margin-top: 20px ;
+}
+
+.wrapp-modal-telephone{
+    width: 150px;
+    height: 1px;
+    background-color: rgb(92, 67, 99);
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
