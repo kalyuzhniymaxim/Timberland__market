@@ -366,3 +366,12 @@ nav img {
     filter: invert(100%);
     width: 80%;
 }
+
+@media(max-width: 400px){
+    .goods{
+        margin: 0;
+    }
+    #searchInput{
+        width: 40%;
+    }
+}
