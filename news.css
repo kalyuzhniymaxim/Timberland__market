@@ -417,3 +417,23 @@ margin-bottom: 20px;
         margin: 0 auto;
     }
 }
+
+@media(max-width: 520px){
+        .open-btn{
+        width: 80%;
+    }
+    .modal__box{
+    max-width: 300px;
+    padding: 5px;
+    margin: 30px 20px 200px 20px;
+
+}
+.open-btn div p, .modal p {
+    letter-spacing: 1px;
+    padding: 10px;
+}
+
+.modal__lose-btn {
+    padding: 0;
+}
+}
